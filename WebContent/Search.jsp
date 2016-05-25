@@ -7,7 +7,7 @@
 <title>吉他销售</title>
 </head>
 <body>
-<form name="guitarfeature" action="searchguitar" method="post">
+<form name="guitarfeature" action="SearchGuitar" method="post">
 <table>
 <tr><td>制造商</td><td><input name="builder" type="text"></td></tr>
 <tr><td>风格</td><td><input name="model" type="text"></td></tr>
