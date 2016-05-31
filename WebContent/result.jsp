@@ -10,24 +10,26 @@
 <title>Insert title here</title>
 </head>
 <body>
- <%  
-        Class.forName("org.sqlite.JDBC");//加载驱动  
-        Connection conn =  DriverManager.getConnection("jdbc:sqlite:GuitarSystem.db");//建立连接  
-        Statement stmt = conn.createStatement();//创建执行者  
-        ResultSet rs = stmt.executeQuery("select * from guitars ");//返回结果集（游标）  
-    %>  
+
   
     <table cellpadding="0" cellspacing="0" border="1" width="500" >  
-        <%  
-            while (rs.next()) {  
-        %>  
+       
             <tr>  
-                <td><%=rs.getString(1) %></td>  
-                <td><%=rs.getString(2) %></td>  
+                <td>price</td>  
+                <td>builder</td> 
+                 <td>type</td>  
+                <td>model</td> 
+                <td>backwood</td>  
+                <td>topwood</td> 
             </tr>  
-        <%  
-            }  
-        %>  
+       <tr>  
+                <td>3999.95</td>  
+                <td>Collings</td> 
+                 <td>CJ</td>  
+                <td>acoustic</td> 
+                <td>Indian Rosewood</td>  
+                <td>Sitka</td> 
+            </tr>  
     </table>  
 </body>
 </html>
